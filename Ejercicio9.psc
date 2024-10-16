@@ -5,12 +5,12 @@ Algoritmo Ejercicio9
 	leer sub
 	i<--1
 	carac=""
-	mientras i<>longitud(cad)  Hacer
+	mientras i<>longitud(cad)-longitud(sub)  Hacer
 		i<-i+1
 		carac<-subcadena(cad,i,i+longitud(sub)-1)
 		Si carac=sub Entonces
 			Escribir "La subcadena esta dentro de la cadena"
-			i=longitud(cad)
+			i=longitud(cad)-longitud(sub)
 		FinSi
 		Si carac<>sub Y i=Longitud(cad) Entonces
 			Escribir "La subcadena no esta dentro de la cadena"
